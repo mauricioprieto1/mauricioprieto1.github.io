@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mauricio Prieto — Portfolio</title>
+  <meta name="description" content="UTEP CS student building dashboards, REST APIs, and data/ML apps with React/TypeScript/Tailwind, ASP.NET Core (C#), PostgreSQL, and Python/Pandas." />
+  <meta property="og:title" content="Mauricio Prieto — Portfolio" />
+  <meta property="og:description" content="Software Engineer Intern at the Hunt Institute. Projects: MoodTunes, STAR College Assistant, AI4ALL Accessibility." />
+  <meta name="theme-color" content="#0b0f14" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 selection:bg-emerald-400/30">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:m-4 focus:rounded-md focus:bg-emerald-500 focus:px-3 focus:py-2 focus:text-neutral-900">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-30 border-b border-white/10 bg-neutral-950/70 backdrop-blur">
+    <nav class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <a href="#" class="font-bold tracking-tight">Mauricio<span class="text-emerald-400">.dev</span></a>
+      <ul class="flex gap-6 text-sm">
+        <li><a href="#projects" class="text-neutral-300 hover:text-white">Projects</a></li>
+        <li><a href="#experience" class="text-neutral-300 hover:text-white">Experience</a></li>
+        <li><a href="#contact" class="text-neutral-300 hover:text-white">Contact</a></li>
+      </ul>
+      <a href="#" class="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-emerald-400">Download Resume</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="mx-auto max-w-5xl px-4 py-16">
+      <div class="grid items-center gap-10 md:grid-cols-2">
+        <div>
+          <h1 class="text-3xl font-extrabold leading-tight md:text-4xl">
+            Software Engineer Intern — Hunt Institute (UTEP)
+          </h1>
+          <p class="mt-4 text-neutral-300">
+            I build public dashboards, REST APIs, and data/ML apps with React/TypeScript/Tailwind,
+            ASP.NET Core (C#), PostgreSQL, and Python/Pandas.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="rounded-full bg-emerald-500 px-5 py-2.5 font-semibold text-neutral-900 hover:bg-emerald-400">View Projects</a>
+            <a href="#contact" class="rounded-full border border-white/20 px-5 py-2.5 font-semibold text-neutral-100 hover:bg-white/5">Contact</a>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-2 text-xs text-neutral-300">
+            <span class="rounded-full border border-white/10 px-3 py-1">30 interactive charts</span>
+            <span class="rounded-full border border-white/10 px-3 py-1">15+ cities</span>
+            <span class="rounded-full border border-white/10 px-3 py-1">100+ MAU</span>
+            <span class="rounded-full border border-white/10 px-3 py-1">ETL 15→2 hr (~$1K/update)</span>
+            <span class="rounded-full border border-white/10 px-3 py-1">2,400+ municipalities</span>
+            <span class="rounded-full border border-white/10 px-3 py-1">200+ stakeholders</span>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <!-- Optional portrait: drop an image at /assets/portrait.jpg -->
+          <div class="h-48 w-48 rounded-full border-4 border-white/20 bg-gradient-to-b from-neutral-800 to-neutral-900"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mx-auto max-w-5xl px-4 py-12">
+      <h2 class="text-2xl font-bold">Projects</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <!-- MoodTunes -->
+        <article class="rounded-2xl border border-white/10 bg-neutral-900/40 p-5">
+          <h3 class="text-lg font-semibold">Azure AI Hackathon: MoodTunes</h3>
+          <p class="mt-1 text-sm text-neutral-300">React · C# · .NET · Azure Multilabel Classifier · Python — <span class="italic">March 2025 – Current</span></p>
+          <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-neutral-200">
+            <li>Built a full-stack application that classifies user text into 8 moods and curates playlists, supporting multi-mood inputs.</li>
+            <li>Achieved <strong>72.65%</strong> mood classification accuracy with a custom Azure multilabel model trained on <strong>40K+</strong> texts.</li>
+            <li>Integrated a backend using Spotify API for playlist discovery with Azure secure key storage and Postman for testing.</li>
+            <li>Automated builds and tests with GitHub Actions, reducing deploy time from <strong>10 to 2 min</strong> and improving reliability.</li>
+          </ul>
+        </article>
+
+        <!-- STAR College Assistant -->
+        <article class="rounded-2xl border border-white/10 bg-neutral-900/40 p-5">
+          <h3 class="text-lg font-semibold">STAR College Assistant</h3>
+          <p class="mt-1 text-sm text-neutral-300">React · Flask · PostgreSQL · Docker · Python — <span class="italic">May 2025</span></p>
+          <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-neutral-200">
+            <li>Created an app that answers student course related questions with a GPT-4 chatbot & responsive React front-end.</li>
+            <li>Designed a Flask + PostgreSQL backend for scholarship-matching and micro-lessons (REST API).</li>
+            <li>Dockerized services and set up GitHub Actions for automated build/test and Docker Compose deployments.</li>
+          </ul>
+        </article>
+
+        <!-- AI4ALL -->
+        <article class="rounded-2xl border border-white/10 bg-neutral-900/40 p-5 md:col-span-2">
+          <h3 class="text-lg font-semibold">AI4ALL Tech Project: AI for Accessibility</h3>
+          <p class="mt-1 text-sm text-neutral-300">Python · Pandas · GBR · Streamlit · scikit-learn — <span class="italic">May 2025 – Aug 2025</span></p>
+          <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-neutral-200">
+            <li>Developed an ML model (team of 5) to assess instructional complexity, helping users with executive-function.</li>
+            <li>Built a <strong>10K+</strong> dataset, tested <strong>5</strong> models, and selected a tuned Gradient Boosting Regressor, cutting <strong>RMSE by 25%</strong>.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="mx-auto max-w-5xl px-4 py-12">
+      <h2 class="text-2xl font-bold">Experience</h2>
+      <div class="mt-6 space-y-6">
+        <article class="rounded-2xl border border-white/10 bg-neutral-900/40 p-5">
+          <header class="mb-1">
+            <h3 class="text-lg font-semibold">Software Engineer Intern — Hunt Institute for Global Competitiveness, UTEP</h3>
+            <p class="text-sm text-neutral-300">Aug 2025 – Current</p>
+          </header>
+          <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-neutral-200">
+            <li>Develop a public U.S.–Mexico border economic indicators dashboard using React, TypeScript and Tailwind, delivering 30 interactive charts for 15+ cities, serving 100+ monthly active users.</li>
+            <li>Implemented REST APIs (ASP.NET Core, C#) with request validation, versioned endpoints, tested with Postman.</li>
+            <li>Designed a PostgreSQL schema and automated extract–transform–load pipelines (Python, Pandas) for multinational data sources, reducing update time from 15 to 2 hours, resulting in cost savings of $1,000 per data update.</li>
+          </ul>
+        </article>
+
+        <article class="rounded-2xl border border-white/10 bg-neutral-900/40 p-5">
+          <header class="mb-1">
+            <h3 class="text-lg font-semibold">Software Engineer Intern — Hunt Institute for Global Competitiveness, UTEP</h3>
+            <p class="text-sm text-neutral-300">May 2025 – Aug 2025</p>
+          </header>
+          <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-neutral-200">
+            <li>Led a team of 3 to build an economic data visualization tool (React/NodeJS/MSSQL/Docker) covering labor & industry data for 2400+ municipalities, leveraged by 200+ stakeholders for binational market analysis.</li>
+            <li>Reduced data processing time by 60% by developing Python workflows & T-SQL stored procedures for statistical calculations on 20M+ census rows across 300+ economic sectors and 74+ metropolises, delivered via REST APIs.</li>
+            <li>Delivered 60+ national maps per month with hover and color scale for city-level insights, via GeoJSON data.</li>
+          </ul>
+        </article>
+
+        <article class="rounded-2xl border border-white/10 bg-neutral-900/40 p-5">
+          <header class="mb-1">
+            <h3 class="text-lg font-semibold">Undergraduate Research Assistant — Hunt Institute for Global Competitiveness, UTEP</h3>
+            <p class="text-sm text-neutral-300">Oct 2024 – May 2025</p>
+          </header>
+          <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-neutral-200">
+            <li>Coordinated a team of 2, reduced data processing time by 80% by building a Python pipeline (Pandas) for salary classification and region mapping, delivering datasets for 8 monthly economic reports (Hunt Institute Newsletter).</li>
+            <li>Enabled 500+ users (researchers, industry leaders) to make data-driven decisions, as measured by the inclusion of script-generated employment and wage datasets in the Institute’s annual Economic Analysis White Paper.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mx-auto max-w-5xl px-4 py-12">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="mt-3 text-neutral-300">Reach out for collaboration or opportunities.</p>
+      <div class="mt-4 flex flex-wrap items-center gap-3 text-sm">
+        <a href="mailto:oscarmprietom@outlook.com" class="rounded-full border border-white/20 px-4 py-2 hover:bg-white/5">oscarmprietom@outlook.com</a>
+        <a href="https://github.com/mauricioprietom" class="rounded-full border border-white/20 px-4 py-2 hover:bg-white/5">GitHub</a>
+        <a href="https://www.linkedin.com/in/mauricioprietom" class="rounded-full border border-white/20 px-4 py-2 hover:bg-white/5">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 py-8 text-center text-xs text-neutral-400">
+    © <span id="y"></span> Mauricio Prieto. Built with semantic HTML & Tailwind.
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
